@@ -1,0 +1,79 @@
+{
+  "jmcomic_log": {
+    "description": "是否启用JMComic API日志",
+    "type": "bool",
+    "default": false
+  },
+  "jmcomic_proxies": {
+    "description": "代理配置",
+    "type": "string",
+    "default": "system"
+  },
+  "jmcomic_thread_count": {
+    "description": "下载线程数量",
+    "type": "int",
+    "default": 10
+  },
+  "jmcomic_username": {
+    "description": "JM登录用户名",
+    "type": "string",
+    "default": null
+  },
+  "jmcomic_password": {
+    "description": "JM登录密码",
+    "type": "string",
+    "default": null
+  },
+  "jmcomic_output_format": {
+    "description": "输出格式：pdf 或 zip",
+    "type": "string",
+    "options": ["pdf", "zip"],
+    "default": "pdf"
+  },
+  "jmcomic_zip_password": {
+    "description": "ZIP 压缩包密码（仅 ZIP 格式有效）",
+    "type": "string",
+    "default": null
+  },
+  "jmcomic_modify_real_md5": {
+    "description": "是否修改PDF的MD5值（仅PDF格式有效）",
+    "type": "bool",
+    "default": false
+  },
+  "jmcomic_group_list_mode": {
+    "description": "群列表模式：blacklist（默认禁用）/ whitelist（默认启用）",
+    "type": "string",
+    "options": ["blacklist", "whitelist"],
+    "default": "blacklist"
+  },
+  "jmcomic_allow_private": {
+    "description": "是否允许私聊功能",
+    "type": "bool",
+    "default": true
+  },
+  "jmcomic_user_limits": {
+    "description": "每位用户的每周下载限制次数",
+    "type": "int",
+    "default": 5
+  },
+  "jmcomic_punish_on_violation": {
+    "description": "当用户下载违规内容时是否惩罚（禁言+拉黑）",
+    "type": "bool",
+    "default": true
+  },
+  "jmcomic_allow_album_download": {
+    "description": "是否允许使用本子集下载功能",
+    "type": "bool",
+    "default": false
+  },
+  "jmcomic_results_per_page": {
+    "description": "每页显示的搜索结果数量",
+    "type": "int",
+    "default": 20
+  },
+  "jmcomic_max_page_count": {
+    "description": "单次下载最大页数限制，0表示不限制",
+    "type": "int",
+    "default": 150
+  }
+}
